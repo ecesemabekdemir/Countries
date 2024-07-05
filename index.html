@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countries</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/country.css">
+  <script src="assets/js/countries.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <header class="header" >
+      <h3>Ülke Listesi</h3>
+      <button id="addBtn">Ekle</button>
+    </header>
+    <div class="countries" id="countryContainer"></div>
+  
+    <form id="countryForm">
+      <ul id="countryList"></ul>
+
+    </form>
+    <dialog id="modal">
+      <fieldset>
+        <legend class="modelAddNew">Ülke Ekle</legend>
+        <h2 class="modelEdit"></h2>
+      <form id="newCountryForm" class="formInRow">
+        <input required name="countryName" type="text" placeholder="Ülke Adı">
+        <input required name="population" type="number" placeholder="nüfus">
+        <input required name="flag" type="text" placeholder="bayrak">
+        <input required name="famousFood" type="text" placeholder="ünlü yemek">
+        <input required name="capitalCity" type="text" placeholder="Başkent">
+        <button class="modelAddNew">Ekle</button> 
+        <button  class="modelEdit">Düzenle</button>
+        <button type="button" onclick="newCountryForm.reset();modal.close();">Vazgeç</button>
+        <input type="hidden" name="id" value="">
+      </form>
+    </fieldset>
+  </dialog>
+
+
+  </div>
+
+
+</body>
+</html>

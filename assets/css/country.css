@@ -1,0 +1,132 @@
+body {
+  font-family: "Wittgenstein", serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 26px;
+  margin: 0;
+}
+
+#addBtn {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#addBtn:hover {
+  background-color: #218838;
+}
+
+.countries {
+  margin-bottom: 20px;
+}
+
+fieldset {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 36px;
+}
+
+legend {
+  padding: 0 10px;
+  font-weight: bold;
+  color: #c82333;
+}
+
+
+
+.formInRow input {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.formInRow button {
+  margin-bottom: 10px;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #dc3545;
+}
+
+
+.formInRow button:hover {
+  background-color: #c82333;
+}
+
+
+ li {
+  background-color: #f9f9f9;
+  padding: 18px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+dialog {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 36px;
+}
+
+.modelAddNew {
+  display: block;
+}
+
+.modelEdit {
+  display: none;
+}
+
+.editControls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 10px;
+}
+.editControls a svg {
+  width: 26px;
+  height: 26px;
+}
+
+.country {
+  border:1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+
+li span {
+  font-weight: bold;
+  color: #c82333;
+}
